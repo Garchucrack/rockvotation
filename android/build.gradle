@@ -4,17 +4,13 @@ allprojects {
         mavenCentral()
     }
 }
-dependencies {
-    classpath"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    classpath"com.android.tools.build:gradle:7.0.4"
-}
 
-rootProject.buildDir = "../build"
+rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
 subprojects {
-    project.evaluationDependsOn(":app")
+    project.evaluationDependsOn(':app')
 }
 
 tasks.register("clean", Delete) {

@@ -1,5 +1,5 @@
 plugins {
-    id "com.android.application"
+    id 'com.android.application'
     // START: FlutterFire Configuration
     id 'com.google.gms.google-services'
     // END: FlutterFire Configuration
@@ -26,7 +26,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.fernandojzo.rocky"
+    namespace "online.store.gs"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
